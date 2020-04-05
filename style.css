@@ -1,0 +1,428 @@
+/*******************************************************
+*              CSS POUR TOUTES LES PAGES
+*******************************************************/
+
+body {
+    margin: 0;
+    width: 100%;
+    background: rgba(0,0,0,0.05);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    color: #000;
+    line-height: 1.5; 
+}
+
+h1, h2 {
+    font-size: 20px;
+}
+
+a {
+    color: inherit;
+}
+
+/*******************************************************
+*           CSS PAGE D'INSCRIPTION/CONNEXION
+*******************************************************/
+
+.form {
+    width: 100%; 
+    background: #fff;
+    padding: 15px 25px;
+    text-align: center;
+    
+}
+
+.header-form {
+    margin-bottom: 15px;
+}
+
+.header-form > h1 {
+    text-transform: uppercase;
+}
+
+.logo-form-GBAF {
+    width: 70px;
+    margin: 0 auto;
+}
+
+.error-strlen {
+    margin: 6px 0 !important;
+    padding-left: 15px !important;
+    text-align: justify !important;
+}
+
+.fields {
+    border: 2.5px solid rgba(0,0,0,0.05);
+    margin: 6px 0;
+    padding: 6px 18px;
+    border-radius: 10px;
+}
+
+.fields input {
+    width: 100%;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    margin-top: 3px;
+}
+
+.button-form {
+    width: 100%;
+    background: red;
+    padding: 10px 0;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    transition: .3s;   
+}
+
+.button-form:hover {
+    background: rgb(215, 20, 20);
+}
+
+.form > p {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.form a {
+    font-weight: bold;
+}
+
+/*******************************************************
+*                 CSS PAGE D'ACCUEIL
+*******************************************************/
+
+            /*******************************************************
+            *                        HEADER
+            *******************************************************/
+
+.topbar {
+    position: absolute;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 45px;
+    width: 100%;
+    background: #fbfbfb;
+    box-shadow: 0px -15px 35px 8px rgba(0,0,0,0.2);
+    color:#000;
+    line-height: 2;
+}
+
+.logo-GBAF {
+    width: 70px;
+}
+
+.user {
+    text-decoration: none;
+}
+
+.user::before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-right: 6px;
+    width: 20px;
+    height: 20px;
+    background: url(img/user.svg);
+}
+
+.user:hover {
+    text-decoration: underline;
+}
+
+/*******************************************************
+*                         MAIN
+*******************************************************/
+
+.main {
+    padding-top: 155px;
+    background: #fff;
+}
+
+.presentation, .partners {
+    margin: 0px 15px 15px 15px;
+}
+
+.presentation p, .partners p{
+    padding: 8px 20px;
+    text-align: justify;
+}
+
+.presentation {
+    margin-top: 10px;
+}
+
+.partners {
+    margin-top: 15px;
+}
+
+.presentation > img {
+    margin-top: 7px;
+}
+
+.container {   
+    margin-top: 15px;
+    margin-bottom: 28px;
+}
+
+.partner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+    background: #fbfbfb;
+    box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.2);
+    border-radius: 25px;  
+}
+
+.partner-title {
+    padding-top: 15px;
+    padding-left: 20px;
+}
+
+.partner-description {
+    font-size: 15px;
+}
+
+.partner-button {
+    margin-top: 15px;
+    margin-left: auto;
+    padding: 8px;
+    transform: translateY(-15px) translateX(-15px);
+    text-decoration: none;
+    color: #fff; 
+    border-radius: 20px;
+    background: red;
+    transition: .3s;   
+}
+
+.partner-button:hover {
+    background: rgb(215, 20, 20);
+}
+
+/*******************************************************
+*                  CSS PAGE PARTENAIRES
+*******************************************************/
+
+.main-p {
+    padding-top: 155px;
+    background: #fff;
+}
+
+.partner-p {
+    margin: 15px 15px 5px 15px;
+}
+
+.partner-image-p {
+    margin: 0 auto;
+    width: 300px;
+}
+
+.partner-title-p {
+    margin-top: 15px;
+}
+
+.partner-description-p {
+    padding: 8px 20px;
+    text-align: justify;
+}
+
+.partner-p ul {
+    margin: -6px 0;
+}
+
+.comments {
+    margin: 0 15px 32px 15px;
+}
+
+.comment {
+    display: flex;
+    flex-direction: column;
+    margin: -10px 15px;
+    padding: 10px 20px;
+    background: #fbfbfb;
+    box-shadow: 0px 0px 30px -5px rgba(0,0,0,0.2);
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.form-comment {
+    width: 60%;
+}
+
+.new-comment {
+    width: 100%;
+    border: 2.5px solid rgba(0,0,0,0.05);
+    padding: 6px 8px;
+    border-radius: 10px;
+}
+
+.button-comment {
+    width: 100%;
+    background: red;
+    padding: 6px 8px;
+    color: white;
+    text-transform: uppercase;
+    margin-top: 6px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-style: none;
+    transition: .3s;   
+}
+
+.button-comment:hover {
+    background: rgb(215, 20, 20);
+}
+
+/*******************************************************
+*            FOOTER POUR TOUTES LES PAGES
+*******************************************************/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 30px;
+    border-top: 1px solid #000;
+}
+
+footer a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/*******************************************************
+*         MEDIA QUERIES POUR VERSION DESKTOP
+*******************************************************/
+
+@media only screen and (min-width: 600px) {
+    /*******************************************************
+    *              CSS POUR TOUTES LES PAGES
+    *******************************************************/
+    body {
+     margin: 0 auto;
+     width: 100%;
+    }
+    /*******************************************************
+    *           CSS PAGE D'INSCRIPTION/CONNEXION
+    *******************************************************/
+    .form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        max-width: 600px;
+        padding: 25px 40px;
+        border-radius: 15px;
+    }
+    .header-form {
+        margin-bottom: 25px;
+    }
+    .fields {
+        margin: 8px 0;
+        padding: 12px 18px;
+    }
+    .button-form {
+        padding: 14px 0;
+        margin-top: 8px;
+    }
+    .form > p {
+        margin-top: 25px;
+    }
+    /*******************************************************
+    *                 CSS PAGE D'ACCUEIL
+    *******************************************************/
+    .topbar {
+     position: fixed;
+     top: 0;
+     right: 0;
+     left: 0;
+     flex-direction: row;
+     justify-content: space-between;
+     margin: 0 auto;
+     clip-path: polygon(0 0, 0 130%, 100% 130%, 100% 0);
+     width: 100%;
+    }
+    .main, .main-p {
+     padding-top: 125px;
+    }
+    .partner {
+     position: relative;
+     height: 200px;
+    }
+    .partner-padding {
+     padding-left: 208px;
+    }
+    .partner-image {
+     position: absolute;
+     top: 50%;
+     left: 10px;
+     transform: translateY(-50%);
+     width: 200px;
+    }
+    .partner-infos {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+    }
+    .partner-title {
+     padding-top: 0;
+    }
+    .partner-button {
+     position: absolute;
+     right: 0;
+     bottom: 0;
+     margin: 0;
+    }
+    /*******************************************************
+    *                  CSS PAGE PARTENAIRES
+    *******************************************************/
+    .partner-image-p {
+     width: 350px;
+    }
+    .features {
+        margin: 0 15px 40px 15px;
+    }
+    .comments {
+        margin: 0 15px 40px 15px;
+    }
+    .comment {
+        margin: 0px 15px;
+    }
+    .form-comment {
+        text-align: right;
+    }
+    .new-comment {
+        width: 60%;
+    }
+    .button-comment {
+        width: 25%;
+        margin-top: 0;
+    }
+ }
+
+@media only screen and (min-width: 960px) {
+   body {
+   width: 960px;
+   }
+   .topbar {
+   width: 960px;
+   }
+}
